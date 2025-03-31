@@ -1,0 +1,85 @@
+.projects {
+    text-align: center;
+    padding: 50px;
+    background: #f1f5f9;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+  
+  
+  .project-details {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .project-details h3 {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-bottom: 10px;
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .tech-used {
+    font-size: 0.9rem;
+    color: #444;
+    font-style: italic;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    color: white;
+    background: #2563eb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    background: #1e40af;
+  }
+  
+  .project-links .live-demo {
+    background: #22c55e;
+  }
+  
+  .project-links .live-demo:hover {
+    background: #15803d;
+  }
+  

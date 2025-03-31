@@ -1,0 +1,55 @@
+.contact {
+    background: #f9fafb;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    color: #2563eb;
+    margin-bottom: 15px;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 8px 0;
+  }
+  
+  .contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .cta-buttons {
+    margin-top: 20px;
+  }
+  
+  .contact-btn {
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background: #1e40af;
+  }
+  
