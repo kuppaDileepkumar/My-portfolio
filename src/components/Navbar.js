@@ -5,7 +5,7 @@ import "./Navbar.css"; // Assuming you have a CSS file for styling
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>My Portfolio</h2>
+      <h2>Dileepkumar</h2>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
