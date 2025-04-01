@@ -1,54 +1,99 @@
 .about {
-    background-color: #f9fafb;
-    padding: 50px 20px;
-    text-align: center;
+  background-color: #f9fafb;
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #333;
+}
+
+.education {
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edu-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Make text responsive */
+.about h2, .about p, h3, .edu-item h4, .edu-item p {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 10px;
   }
-  
-  .about-container {
-    max-width: 800px;
-    margin: auto;
-  }
-  
+
   .about h2 {
-    font-size: 2rem;
-    color: #2563eb;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
   }
-  
+
   .about p {
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 30px;
-    color: #333;
-  }
-  
-  .education {
-    text-align: left;
-    margin-top: 20px;
-  }
-  
-  .edu-item {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-  }
-  
-  .edu-item h4 {
-    font-size: 1.2rem;
-    color: #2563eb;
-  }
-  
-  .edu-item p {
     font-size: 1rem;
-    color: #666;
-    margin: 5px 0;
   }
-  
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .edu-item {
+    width: 90%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 5px;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .edu-item {
+    width: 100%;
+    padding: 10px;
+  }
+}
