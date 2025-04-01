@@ -1,10 +1,12 @@
+/* ========== Navbar Styles ========== */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between; /* Space between logo and menu */
   background: #333;
   padding: 15px 30px;
   color: white;
+  position: relative;
 }
 
 .navbar h2 {
@@ -36,14 +38,15 @@
   color: #ffcc00;
 }
 
-/* Mobile Navigation */
+/* ========== Mobile Menu Styles ========== */
 .menu-icon {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
+  color: white;
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
@@ -53,16 +56,21 @@
     font-size: 1.3rem;
   }
 
+  .menu-icon {
+    display: block; /* Show menu icon */
+  }
+
   .navbar ul {
-    display: none; /* Hide the menu initially on smaller screens */
+    display: none; /* Hide menu by default */
     flex-direction: column;
-    background: #333;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
+    background: #222;
     text-align: center;
     padding: 10px 0;
+    transition: all 0.3s ease-in-out;
   }
 
   .navbar ul.active {
@@ -70,10 +78,10 @@
   }
 
   .navbar ul li {
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
-  .menu-icon {
-    display: block;
+  .navbar ul li a {
+    font-size: 1.2rem;
   }
 }
