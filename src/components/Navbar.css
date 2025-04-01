@@ -1,37 +1,79 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333;
-    padding: 15px 30px;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 15px 30px;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Navigation Links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Mobile Navigation */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
   }
-  
+
   .navbar h2 {
-    margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
-  
+
   .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+    display: none; /* Hide the menu initially on smaller screens */
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
   }
-  
+
+  .navbar ul.active {
+    display: flex; /* Show menu when active */
+  }
+
   .navbar ul li {
-    display: inline;
+    padding: 10px 0;
   }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+
+  .menu-icon {
+    display: block;
   }
-  
-  .navbar ul li a:hover {
-    color: #ffcc00;
-  }
-  
+}
